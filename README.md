@@ -1,14 +1,47 @@
-# IRCTC Sprint
+# IRCTC Design Engineering Sprint
 
-## Overview
+![Status](https://img.shields.io/badge/Status-Part%20A%20Complete-success)
+![Version](https://img.shields.io/badge/Version-1.0.0-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-This repository contains the deliverables for the IRCTC Design Engineering Sprint, a comprehensive product management and UX research project focused on identifying and documenting critical user experience issues in the Indian Railway Catering and Tourism Corporation (IRCTC) online ticketing platform.
+## 📋 Table of Contents
 
-The sprint is divided into two parts:
+- [Overview](#overview)
+- [Project Background](#project-background)
+- [Repository Structure](#repository-structure)
+- [Part A Deliverables](#part-a-deliverables)
+- [Part B Deliverables](#part-b-deliverables)
+- [Methodology](#methodology)
+- [Tools Used](#tools-used)
+- [How to Run](#how-to-run)
+- [Git Workflow](#git-workflow)
+- [Contribution Guidelines](#contribution-guidelines)
+- [Submission Requirements](#submission-requirements)
+- [License](#license)
+
+## 🎯 Overview
+
+This repository contains the deliverables for the **IRCTC Design Engineering Sprint**, a comprehensive product management and UX research project focused on identifying and documenting critical user experience issues in the Indian Railway Catering and Tourism Corporation (IRCTC) online ticketing platform.
+
+### Sprint Structure
+
 - **Part A:** Problem Discovery - Detailed documentation of 6 high-impact user experience issues
 - **Part B:** Solution Specifications - Technical specifications, AI feature proposals, and prioritization matrices
 
-This project aims to provide actionable insights for improving the IRCTC platform's usability, reliability, and overall user experience.
+### Project Goal
+
+Provide actionable insights for improving the IRCTC platform's usability, reliability, and overall user experience through systematic problem identification and solution planning.
+
+## 📚 Project Background
+
+IRCTC (Indian Railway Catering and Tourism Corporation) is the official online ticketing platform for Indian Railways, serving millions of users daily. Despite its critical importance, the platform suffers from numerous user experience issues that impact booking efficiency, user satisfaction, and system reliability.
+
+This sprint adopts a structured approach to:
+- Identify and document critical UX problems through systematic research
+- Analyze user flows and break points
+- Propose technical solutions with implementation specifications
+- Leverage AI capabilities to enhance platform functionality
+- Prioritize improvements based on impact and effort
 
 ## Repository Structure
 
