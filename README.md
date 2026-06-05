@@ -1,14 +1,47 @@
-# IRCTC Sprint
+# IRCTC Design Engineering Sprint
 
-## Overview
+![Status](https://img.shields.io/badge/Status-Part%20A%20Complete-success)
+![Version](https://img.shields.io/badge/Version-1.0.0-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-This repository contains the deliverables for the IRCTC Design Engineering Sprint, a comprehensive product management and UX research project focused on identifying and documenting critical user experience issues in the Indian Railway Catering and Tourism Corporation (IRCTC) online ticketing platform.
+## 📋 Table of Contents
 
-The sprint is divided into two parts:
+- [Overview](#overview)
+- [Project Background](#project-background)
+- [Repository Structure](#repository-structure)
+- [Part A Deliverables](#part-a-deliverables)
+- [Part B Deliverables](#part-b-deliverables)
+- [Methodology](#methodology)
+- [Tools Used](#tools-used)
+- [How to Run](#how-to-run)
+- [Git Workflow](#git-workflow)
+- [Contribution Guidelines](#contribution-guidelines)
+- [Submission Requirements](#submission-requirements)
+- [License](#license)
+
+## 🎯 Overview
+
+This repository contains the deliverables for the **IRCTC Design Engineering Sprint**, a comprehensive product management and UX research project focused on identifying and documenting critical user experience issues in the Indian Railway Catering and Tourism Corporation (IRCTC) online ticketing platform.
+
+### Sprint Structure
+
 - **Part A:** Problem Discovery - Detailed documentation of 6 high-impact user experience issues
 - **Part B:** Solution Specifications - Technical specifications, AI feature proposals, and prioritization matrices
 
-This project aims to provide actionable insights for improving the IRCTC platform's usability, reliability, and overall user experience.
+### Project Goal
+
+Provide actionable insights for improving the IRCTC platform's usability, reliability, and overall user experience through systematic problem identification and solution planning.
+
+## 📚 Project Background
+
+IRCTC (Indian Railway Catering and Tourism Corporation) is the official online ticketing platform for Indian Railways, serving millions of users daily. Despite its critical importance, the platform suffers from numerous user experience issues that impact booking efficiency, user satisfaction, and system reliability.
+
+This sprint adopts a structured approach to:
+- Identify and document critical UX problems through systematic research
+- Analyze user flows and break points
+- Propose technical solutions with implementation specifications
+- Leverage AI capabilities to enhance platform functionality
+- Prioritize improvements based on impact and effort
 
 ## Repository Structure
 
@@ -25,50 +58,68 @@ irctc-sprint/
     └── screenshots/                   # Screenshots supporting problem documentation
 ```
 
-## Part A Deliverables
+## 📦 Part A Deliverables
 
 ### PROBLEMS.md
 A comprehensive problem discovery document containing:
 
-- **Summary:** Overview of 6 documented problems across IRCTC platform
-- **Problem 1:** Tatkal Booking Crashes at 10:00 AM
-  - System failure during critical booking windows
-  - 12-step user flow with break point analysis
-  - Technical failure identification (API, database, load balancer)
-  
-- **Problem 2:** Search Filters Do Not Work Reliably
-  - Inconsistent filter application across train search
-  - 15-step user flow with multiple break points
-  - Session state and cache failure analysis
-  
-- **Problem 3:** Seat Selection Resets Randomly
-  - Seat selection state persistence issues
-  - 17-step user flow demonstrating reset behavior
-  - Frontend state management and concurrency issues
-  
-- **Problem 4:** Payment Gateway Timeout During High Traffic
-  - Payment integration failures during peak hours
-  - 15-step user flow with timeout analysis
-  - Gateway API and transaction lock failures
-  
-- **Problem 5:** PNR Status Not Updating in Real-Time
-  - Delayed PNR status updates causing misinformed decisions
-  - 15-step user flow showing cache invalidation issues
-  - Database sync and cache TTL problems
-  
-- **Problem 6:** Mobile Layout Breaks on Smaller Screens
-  - Responsive design failures on budget smartphones
-  - 17-step user flow demonstrating layout issues
-  - CSS media query and touch target failures
+#### Summary
+- **Total problems documented:** 6
+- **Platform explored:** IRCTC
+- **Devices used:** Desktop Chrome and Mobile Chrome
 
+#### Documented Problems
+
+| Problem | Category | Severity | Steps |
+|---------|----------|----------|-------|
+| Tatkal Booking Crashes at 10:00 AM | System Reliability | Critical | 12 |
+| Search Filters Do Not Work Reliably | UX Functionality | High | 15 |
+| Seat Selection Resets Randomly | State Management | High | 17 |
+| Payment Gateway Timeout During High Traffic | Payment Integration | Critical | 15 |
+| PNR Status Not Updating in Real-Time | Data Accuracy | High | 15 |
+| Mobile Layout Breaks on Smaller Screens | Responsive Design | High | 17 |
+
+#### Problem Details
+
+**Problem 1: Tatkal Booking Crashes at 10:00 AM**
+- System failure during critical booking windows
+- 12-step user flow with break point analysis
+- Technical failure identification (API, database, load balancer)
+
+**Problem 2: Search Filters Do Not Work Reliably**
+- Inconsistent filter application across train search
+- 15-step user flow with multiple break points
+- Session state and cache failure analysis
+
+**Problem 3: Seat Selection Resets Randomly**
+- Seat selection state persistence issues
+- 17-step user flow demonstrating reset behavior
+- Frontend state management and concurrency issues
+
+**Problem 4: Payment Gateway Timeout During High Traffic**
+- Payment integration failures during peak hours
+- 15-step user flow with timeout analysis
+- Gateway API and transaction lock failures
+
+**Problem 5: PNR Status Not Updating in Real-Time**
+- Delayed PNR status updates causing misinformed decisions
+- 15-step user flow showing cache invalidation issues
+- Database sync and cache TTL problems
+
+**Problem 6: Mobile Layout Breaks on Smaller Screens**
+- Responsive design failures on budget smartphones
+- 17-step user flow demonstrating layout issues
+- CSS media query and touch target failures
+
+#### Documentation Structure
 Each problem includes:
-- What is broken
-- How I found it (for self-discovered problems)
-- Affected users
-- Frequency analysis
-- Current flow step by step (minimum 6 steps)
-- Where exactly it breaks
-- Screenshot description
+- **What is broken** - Detailed description of the issue
+- **How I found it** - Discovery methodology (for self-discovered problems)
+- **Affected users** - User segments impacted
+- **Frequency analysis** - Occurrence rates, peak times, severity metrics
+- **Current flow step by step** - Minimum 6-step user journey with break points
+- **Where exactly it breaks** - Technical failure analysis (primary/secondary/tertiary)
+- **Screenshot description** - Visual documentation of the issue
 
 ## Part B Deliverables
 
