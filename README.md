@@ -121,7 +121,7 @@ Each problem includes:
 - **Where exactly it breaks** - Technical failure analysis (primary/secondary/tertiary)
 - **Screenshot description** - Visual documentation of the issue
 
-## Part B Deliverables
+## 🚀 Part B Deliverables
 
 ### SPECS.md
 Technical solution specifications for addressing the documented problems:
@@ -148,25 +148,74 @@ Prioritization and impact analysis:
 - Timeline and resource allocation recommendations
 - Success metrics and KPIs
 
-## Tools Used
+## 🔬 Methodology
+
+### Research Approach
+
+This project employs a systematic UX research methodology:
+
+1. **Problem Identification**
+   - Direct platform exploration and testing
+   - User flow analysis across critical booking journeys
+   - Cross-device compatibility testing (desktop and mobile)
+   - Peak traffic simulation (Tatkal booking windows)
+
+2. **Documentation Standards**
+   - Structured problem documentation with consistent format
+   - Step-by-step user flow mapping with break points
+   - Technical failure analysis at multiple levels
+   - Frequency and severity metrics collection
+
+3. **Solution Planning**
+   - Technical specification development
+   - AI capability assessment and integration planning
+   - Prioritization based on impact-effort analysis
+   - Implementation timeline and resource allocation
+
+### Testing Protocol
+
+- **Platforms:** Desktop Chrome, Mobile Chrome
+- **Devices:** iPhone 13 Pro (390px), Samsung Galaxy S21 (360px), Redmi Note 7 (320px)
+- **Time Periods:** Peak hours (10:00 AM - 12:00 PM), Off-peak hours (3:00 PM - 5:00 PM)
+- **Test Scenarios:** Tatkal booking, regular booking, PNR tracking, seat selection
+
+## 🛠️ Tools Used
 
 ### Research & Documentation
-- **Markdown:** Documentation formatting
+- **Markdown:** Documentation formatting and structure
 - **Git:** Version control and collaboration
 - **Chrome DevTools:** Browser inspection and debugging
 - **Mobile Device Testing:** Cross-device compatibility testing
 
 ### Platforms Tested
-- **Desktop Chrome:** Primary desktop browser testing
-- **Mobile Chrome:** Mobile browser testing on various screen sizes
-- **Budget Smartphones:** Testing on devices < 360px screen width
+| Platform | Purpose | Screen Sizes |
+|----------|---------|--------------|
+| Desktop Chrome | Primary desktop browser testing | 1920x1080, 1366x768 |
+| Mobile Chrome | Mobile browser testing | 390px, 360px, 320px |
+| Budget Smartphones | Responsive design validation | < 360px width |
 
 ### Documentation Tools
 - **VS Code:** Code and markdown editing
 - **Git:** Version control
 - **GitHub:** Repository hosting and collaboration
 
-## How to Run
+## 🚀 How to Run
+
+### Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/Nishant804-alt/irctc-sprint.git
+cd irctc-sprint
+
+# View Part A deliverables
+cat part-a/PROBLEMS.md
+
+# View Part B deliverables (when available)
+cat part-b/SPECS.md
+cat part-b/AI-FEATURE.md
+cat part-b/MATRIX.md
+```
 
 ### Prerequisites
 - Git installed on local machine
@@ -177,7 +226,7 @@ Prioritization and impact analysis:
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Nishant804-alt/irctc-sprint.git
    cd irctc-sprint
    ```
 
@@ -206,19 +255,23 @@ Prioritization and impact analysis:
    ```
 
 ### Viewing Markdown Files
-- **VS Code:** Built-in markdown preview (Ctrl+Shift+V)
-- **GitHub:** Automatic markdown rendering in repository view
-- **Markdown editors:** Typora, MarkText, or any markdown viewer
-- **Command line:** `cat` or `less` for basic viewing
+| Tool | Method | Shortcut |
+|------|--------|----------|
+| VS Code | Built-in markdown preview | `Ctrl+Shift+V` |
+| GitHub | Automatic rendering | Open file in browser |
+| Typora | Dedicated markdown editor | Open file |
+| MarkText | Open source markdown editor | Open file |
+| Command Line | Basic viewing | `cat` or `less` |
 
-## Git Workflow
+## 📝 Git Workflow
 
 ### Branching Strategy
-- `master` branch: Main production branch
+- `main` branch: Main production branch
 - Feature branches: Created for each major deliverable (e.g., `part-a-problems`, `part-b-specs`)
 
 ### Commit Convention
 Use descriptive commit messages following conventional commit format:
+
 ```
 <type>: <subject>
 
@@ -228,15 +281,17 @@ Use descriptive commit messages following conventional commit format:
 ```
 
 **Types:**
-- `feat`: New feature or deliverable
-- `docs`: Documentation changes
-- `fix`: Bug fixes or corrections
-- `refactor`: Code restructuring
-- `style`: Formatting changes
-- `test`: Test additions or modifications
+| Type | Description |
+|------|-------------|
+| `feat` | New feature or deliverable |
+| `docs` | Documentation changes |
+| `fix` | Bug fixes or corrections |
+| `refactor` | Code restructuring |
+| `style` | Formatting changes |
+| `test` | Test additions or modifications |
 
 **Examples:**
-```
+```bash
 docs: add comprehensive problem documentation for Part A
 feat: complete AI feature proposals for Part B
 fix: correct formatting in SPECS.md
@@ -276,7 +331,7 @@ fix: correct formatting in SPECS.md
 - Ensure all documentation is updated
 - Request review before merging
 
-## Submission Requirements
+## 📋 Submission Requirements
 
 ### Part A Submission Checklist
 - [x] PROBLEMS.md completed with 6 documented problems
@@ -297,12 +352,14 @@ fix: correct formatting in SPECS.md
 - [ ] Implementation timeline and resource allocation
 
 ### Quality Standards
-- **Clarity:** All documentation must be clear and concise
-- **Completeness:** All sections must be thoroughly filled
-- **Accuracy:** Technical details must be accurate and realistic
-- **Professionalism:** Maintain professional tone throughout
-- **Consistency:** Use consistent formatting and terminology
-- **Actionability:** Solutions must be implementable and specific
+| Standard | Description |
+|----------|-------------|
+| **Clarity** | All documentation must be clear and concise |
+| **Completeness** | All sections must be thoroughly filled |
+| **Accuracy** | Technical details must be accurate and realistic |
+| **Professionalism** | Maintain professional tone throughout |
+| **Consistency** | Use consistent formatting and terminology |
+| **Actionability** | Solutions must be implementable and specific |
 
 ### Final Submission
 1. Ensure all deliverables are complete
@@ -313,7 +370,37 @@ fix: correct formatting in SPECS.md
 6. Create release tag (if applicable)
 7. Submit repository link or zip file as required
 
-## Contact & Support
+## 🤝 Contribution Guidelines
+
+### How to Contribute
+Contributions are welcome! Please follow these guidelines:
+
+1. **Fork the repository**
+2. **Create a feature branch** (`git checkout -b feature/amazing-feature`)
+3. **Commit your changes** (`git commit -m 'feat: add amazing feature'`)
+4. **Push to the branch** (`git push origin feature/amazing-feature`)
+5. **Open a Pull Request**
+
+### Code of Conduct
+- Be respectful and constructive
+- Provide clear and detailed commit messages
+- Ensure all documentation is updated
+- Follow the established commit conventions
+- Test changes before submitting
+
+### Reporting Issues
+If you find any issues or have suggestions:
+1. Check existing issues to avoid duplicates
+2. Create a new issue with descriptive title
+3. Provide detailed description of the problem
+4. Include steps to reproduce (if applicable)
+5. Suggest potential solutions (if known)
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 📞 Contact & Support
 
 For questions or clarifications regarding this sprint:
 - Review the documentation in each deliverable
@@ -322,6 +409,7 @@ For questions or clarifications regarding this sprint:
 
 ---
 
-**Last Updated:** June 5, 2026
-**Version:** 1.0.0
-**Status:** Part A Complete, Part B In Progress
+**Last Updated:** June 5, 2026  
+**Version:** 1.0.0  
+**Status:** Part A Complete, Part B In Progress  
+**Repository:** https://github.com/Nishant804-alt/irctc-sprint
